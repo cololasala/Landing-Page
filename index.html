@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="menu-icon"
+        src="./assets/menu.png"
+        alt="menu-icon"
+        onclick="openSideBar()"
+      />
+      <div id="menu-web">
+        <nav>
+          <ul>
+            <li onclick="goToSection('section-principal')">Home</li>
+            <li onclick="goToSection('section-presentation')">
+              ¿Quiénes somos?
+            </li>
+            <li onclick="goToSection('section-services')">Servicios</li>
+            <li onclick="goToSection('section-contact')">Contacto</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="side-bar" class="animate__animated">
+        <img
+          class="close-icon"
+          src="./assets/close4.png"
+          alt="close-icon"
+          onclick="closeSideBar()"
+        />
+        <nav>
+          <ul>
+            <li onclick="goToSection('section-principal')">Home</li>
+            <li onclick="goToSection('section-presentation')">
+              ¿Quiénes somos?
+            </li>
+            <li onclick="goToSection('section-services')">Servicios</li>
+            <li onclick="goToSection('section-contact')">Contacto</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <div id="content-wrapper">
+      <section id="section-principal">
+        <h1>Principal</h1>
+        <div id="container-princiapal">
+          <div
+            style="
+              height: 240px;
+              width: 340px;
+              background-color: aquamarine;
+              margin: 3rem;
+            "
+          >
+            Caja 1
+          </div>
+          <div
+            style="
+              height: 240px;
+              width: 340px;
+              background-color: aquamarine;
+              margin: 3rem;
+            "
+          >
+            Caja 2
+          </div>
+          <div
+            style="
+              height: 240px;
+              width: 340px;
+              background-color: aquamarine;
+              margin: 3rem;
+            "
+          >
+            Caja 3
+          </div>
+        </div>
+      </section>
+
+      <section id="section-presentation">
+        <h3>¿Quiénes somos?</h3>
+        <div id="container-presentation">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            delectus nemo voluptates voluptatibus laborum ratione asperiores
+            commodi quod error dignissimos consequatur minima, cupiditate atque,
+            et rem itaque, voluptatum repudiandae inventore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            delectus nemo voluptates voluptatibus laborum ratione asperiores
+            commodi quod error dignissimos consequatur minima, cupiditate atque,
+            et rem itaque, voluptatum repudiandae inventore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            delectus nemo voluptates voluptatibus laborum ratione asperiores
+          </p>
+        </div>
+      </section>
+
+      <section id="section-services">
+        <h3>Servicios</h3>
+        <div id="container-services" style="padding: 30px;">
+          <p style="margin: 0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            delectus nemo voluptates voluptatibus laborum ratione asperiores
+          </p>
+        </div>
+      </section>
+
+      <section id="section-contact">
+        <h3>Contacto</h3>
+        <div id="container-contact" style="padding: 30px;">
+          <p style="margin: 0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            delectus nemo voluptates voluptatibus laborum ratione asperiores
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

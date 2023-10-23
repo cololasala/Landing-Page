@@ -1,0 +1,156 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+header {
+  background-color: aqua;
+  height: 60px;
+}
+
+#menu-web nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 60px;
+}
+
+#menu-web nav ul {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+#menu-web nav ul li {
+  margin-right: 2rem;
+  font-size: 17px;
+}
+
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.menu-icon,
+.close-icon {
+  mix-blend-mode: multiply;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.menu-icon {
+  height: 30px;
+  width: 40px;
+  float: left;
+  display: none;
+}
+
+.close-icon {
+  float: right;
+  height: 40px;
+  width: 50px;
+}
+
+#side-bar {
+  min-height: 100%;
+  width: 60%;
+  background-color: rgb(3, 160, 160);
+  z-index: 2;
+  position: fixed;
+  display: none;
+}
+
+#side-bar nav {
+  justify-content: center;
+}
+
+#side-bar nav ul {
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+#side-bar nav ul li {
+  margin: 0.5rem;
+}
+
+/* Secciones */
+#section-principal {
+  background-color: rgb(137, 239, 234);
+}
+
+#section-presentation {
+  background-color: rgb(171, 246, 242);
+}
+
+#section-services {
+  background-color: rgb(143, 202, 199);
+}
+
+#section-contact {
+  background-color: rgb(107, 133, 130);
+}
+
+/* Contenedores */
+#container-princiapal {
+  display: flex;
+  justify-content: center;
+}
+
+#container-presentation p {
+  padding: 1.3rem;
+  margin: 0;
+}
+
+h1,
+h3 {
+  margin-top: 0px;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay.active {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-web {
+    display: none;
+  }
+
+  #container-princiapal {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 800px) {
+  #side-bar {
+    display: none !important;
+  }
+
+  .overlay {
+    display: none !important;
+  }
+}
